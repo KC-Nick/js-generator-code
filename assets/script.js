@@ -1,8 +1,9 @@
-// Assignment code here
+// These variables offer meanings for criteria
 var special = "!?$&".split("");
 var lowerCharacters = "abcdefghijklmnopqrstuvwxyz".split("");
 var upperCharacters = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
 var numbers = "0123456789".split("");
+//This function will ask for criteria and execute it as requested
 function generatePassword() {
   var passwordOptions = [];
   var finalPassword = [];
@@ -27,6 +28,7 @@ function generatePassword() {
     passwordOptions = passwordOptions.concat(lowerCharacters);
   }
   console.log(passwordOptions);
+  //This for statement randomizes the options given by the user
   for (var i = 0; i < userLength; i++) {
     var random = Math.floor(Math.random()*passwordOptions.length);
     finalPassword.push(passwordOptions[random])
