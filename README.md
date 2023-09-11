@@ -14,7 +14,7 @@ This Javascript code allows for the webpage to generate a random password, after
 
 ## Installation
 
-To install this code use `git clone` to clone the repository, `git status` to make sure your copy is up to date or `git pull` to update it. Here [link](https://github.com/KC-Nick/js-generator-code) you can find the repository, and here [link](ADD LINK) you can find the live site.
+To install this code use `git clone` to clone the repository, `git status` to make sure your copy is up to date or `git pull` to update it. Here [link](https://github.com/KC-Nick/js-generator-code) you can find the repository, and here [link](https://kc-nick.github.io/js-generator-code/) you can find the live site.
 
 ## Usage
 
