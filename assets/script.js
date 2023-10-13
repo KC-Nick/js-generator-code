@@ -7,7 +7,13 @@ var numbers = "0123456789".split("");
 function generatePassword() {
   var passwordOptions = [];
   var finalPassword = [];
-  var userLength = window.prompt("How many characters would you like on a scale of 8 to 128?");
+  var statement = true;
+    while (statement){
+      var userLength = window.prompt("How many characters would you like on a scale of 8 to 128?");
+    if(userLength > 8 && userLength < 129){
+    break;
+    }
+ }
   var userSpecial = window.confirm("Special Characters, y/n?");
   var userNumbers = window.confirm("Would you like numbers, y/n?");
   var userCapitals = window.confirm("Would you like captial letters, y/n?");
@@ -30,12 +36,12 @@ function generatePassword() {
   console.log(passwordOptions);
   //This for statement randomizes the options given by the user
   for (var i = 0; i < userLength; i++) {
-    var random = Math.floor(Math.random()*passwordOptions.length);
+    var random = Math.floor(Math.random() * passwordOptions.length);
     finalPassword.push(passwordOptions[random])
     console.log(finalPassword);
   }
   return finalPassword.join("");
-}
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -47,6 +53,5 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
